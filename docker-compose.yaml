@@ -35,4 +35,5 @@ services:
             ATLANTIS_GH_TOKEN: $GH_ATLANTIS_TOKEN
             ATLANTIS_GH_WEBHOOK_SECRET: $WEBHOOK_SECRET
             ATLANTIS_REPO_ALLOWLIST: 'github.com/romeshb29/atlantis-local-poc'
-            ATLANTIS_REPO_CONFIG: "/etc/atlantis/repo.yaml"
+            ATLANTIS_REPO_CONFIG: '/etc/atlantis/repo.yaml'
+            PATH: '${PATH}:/home/atlantis/.atlantis/bin'
