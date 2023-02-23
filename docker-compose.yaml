@@ -36,3 +36,4 @@ services:
             ATLANTIS_GH_WEBHOOK_SECRET: $WEBHOOK_SECRET
             ATLANTIS_REPO_ALLOWLIST: 'github.com/romeshb29/atlantis-local-poc'
             ATLANTIS_REPO_CONFIG: '/etc/atlantis/repo.yaml'
+            ATLANTIS_ATLANTIS_URL: 'https://41ee-49-207-223-72.ngrok.io'
