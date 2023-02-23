@@ -8,8 +8,7 @@ workflows:
       steps:
       - env:
           name: TERRAGRUNT_TFPATH
-          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
-      - run: echo $TERRAGRUNT_TFPATH ; echo $ATLANTIS_TERRAFORM_VERSION
+          command: 'echo terraform'
       - run: terragrunt plan -out $PLANFILE
     apply:
       steps:
