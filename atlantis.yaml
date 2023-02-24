@@ -11,6 +11,7 @@ workflows:
       # - env:
       #     name: TERRAGRUNT_TFPATH
       #     command: 'echo terraform'
+      - run: echo First arg - $1
       - run: terragrunt plan -out $PLANFILE
     apply:
       steps:
