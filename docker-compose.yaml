@@ -24,7 +24,7 @@ services:
     atlantis:
         # depends_on:
         # - redis
-        image: flaconi/atlantis-terragrunt:0.22.3-1.3.8-0.43.2
+        image: atlantis-terragrunt:custom
         ports:
         - 4141:4141
         # command: server --gh-user=$GH_USERNAME --gh-token=$GH_ATLANTIS_TOKEN --repo-allowlist=$REPO_WHITELIST --gh-webhook-secret=$WEBHOOK_SECRET --repo-config='/etc/atlantis/repo.yaml'
@@ -35,5 +35,5 @@ services:
             ATLANTIS_GH_TOKEN: $GH_ATLANTIS_TOKEN
             ATLANTIS_GH_WEBHOOK_SECRET: $WEBHOOK_SECRET
             ATLANTIS_REPO_ALLOWLIST: 'github.com/romeshb29/atlantis-local-poc'
-            ATLANTIS_REPO_CONFIG: '/etc/atlantis/repo.yaml'
+            ATLANTIS_REPO_CONFIG: '/opt/repo.yaml'
             ATLANTIS_ATLANTIS_URL: 'https://41ee-49-207-223-72.ngrok.io'
