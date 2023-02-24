@@ -5,5 +5,6 @@ module "container-vm_example_simple_instance" {
   project_id = "xyz"
   subnetwork = "subnet1"
   subnetwork_project = "xyz"
+  zone = "zone"
   # insert the 4 required variables here
 }
