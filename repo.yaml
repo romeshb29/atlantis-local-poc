@@ -1,6 +1,6 @@
 repos:
 - id: /.*/
-  allowed_overrides: [apply_requirements, workflow]
+  allowed_overrides: [plan_requirements, workflow]
   allow_custom_workflows: true
   apply_requirements: [approved, mergeable]
   # workflow: terragrunt
